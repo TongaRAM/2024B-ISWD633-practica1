@@ -10,7 +10,7 @@ Crear el contenedor  **srv-web** usando la imagen nginx version alpine
 ```
 docker create --name srv-web nginx:alpine
 ```
-![srvWeb](img/srvWeb.PNG)
+![srvWeb](img/srvWeb.png)
 
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
@@ -18,14 +18,14 @@ Crear el contenedor usando la imagen hello-world
 ```
 docker create hello-world:latest
 ```
-![helloWorld](img/helloWorld.PNG)
+![helloWorld](img/helloWorld.png)
 
 ### Listar los contenedores ejecutándose o no
 
 ```
 docker ps -a
 ```
-![listar](img/listar.PNG)
+![listar](img/listar.png)
 
 ### Para iniciar un contenedor
 
@@ -36,14 +36,14 @@ Iniciar el contenedor srv-web
 ```
 docker start srv-web
 ```
-![iniciarSrvWeb](img/iniciarSrvWeb.PNG)
+![iniciarSrvWeb](img/iniciarSrvWeb.png)
 
 ### Listar los contenedores ejecutándose
 ```
 docker ps 
 docker ps | grep <nombre contenedor>
 ```
-![listarContenedorEjecutandose](img/listarContenedorEjecutandose.PNG)
+![listarContenedorEjecutandose](img/listarContenedorEjecutandose.png)
 
 ### Para detener un contenedor
 
@@ -51,7 +51,7 @@ docker ps | grep <nombre contenedor>
 docker stop <nombre contenedor>
 ```
 
-![stopSrvWeb](img/stopSrvWeb.PNG)
+![stopSrvWeb](img/stopSrvWeb.png)
 
 ### Para crear un contenedor y ejecutarlo inmediatamente
 
@@ -64,7 +64,7 @@ Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen ngin
 ```
 docker run --name srv-web2 nginx:alpine
 ```
-![ejecPrimerPlano](img/ejecPrimerPlano.PNG)
+![ejecPrimerPlano](img/ejecPrimerPlano.png)
 
 **¿Qué sucede luego de la ejecución del comando?**
 Al ejecutar el comando anterior la terminal queda atrapada (contenedo se ejecuta en primer plano), es decir no permite ingresar más comandos, hasta que se detenga el contenedor (ctrl+c).
@@ -82,7 +82,7 @@ Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando
 ```
 docker run -d --name srv-web3 nginx:alpine
 ```
-![ejecSegundoPlano](img/ejecSegundoPlano.PNG)
+![ejecSegundoPlano](img/ejecSegundoPlano.png)
 
 ### Para eliminar un contenedor
 
@@ -94,13 +94,13 @@ Eliminar el contenedor que se creó a partir de la imagen hello-world
 ```
 docker rm vigorous_keller
 ```
-![eliminarVigorous_keller](img/eliminarVigorous_keller.PNG)
+![eliminarVigorous_keller](img/eliminarVigorous_keller.png)
 
 Verificar que el contenedor que se eliminó
 ```
 docker ps -a
 ```
-![verificarContenedorEliminado](img/verificarContenedorEliminado.PNG)
+![verificarContenedorEliminado](img/verificarContenedorEliminado.png)
 
 ### Para eliminar un contenedor que esté ejecutándose
 
@@ -111,7 +111,7 @@ Eliminar el contenedor **srv-web3**
 ```
 docker rm -f srv-web3
 ```
-![eliminarSrvWeb3](img/eliminarSrvWeb3.PNG)
+![eliminarSrvWeb3](img/eliminarSrvWeb3.png)
 Verificar que el contenedor que se eliminó
 ```
 docker ps -a
@@ -123,4 +123,4 @@ Inspeccionar el contenedor **srv-web**
 ```
 docker inspect srv-web
 ```
-![inspectSrvWeb](img/inspectSrvWeb.PNG)
+![inspectSrvWeb](img/inspectSrvWeb.png)
