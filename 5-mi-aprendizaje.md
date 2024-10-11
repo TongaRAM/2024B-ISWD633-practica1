@@ -6,4 +6,4 @@ Además, con los comandos que aprendí, ahora puedo descargar imágenes especifi
 
 En resumen, no tuve problemas al realizar la tarea, pero si tengo una recomendación, asegurarse de tener descargada la imagen de la que se quiere crear un contenedor. Esto hará que se evite recibir el siguiente mensaje "Unable to find image 'rabbitmq:management-alpine' locally" en la terminal. Aunque esto no es necesario dado que el sistema reconoce que no se encuentra la imagen y la descargará en ese momento. Esto  simplemente sirve para tener buenas prácticas y adquirir concienca de lo que se esta haciendo.
 
-![recomendacion](img/recomendacion.PNG)
+![recomendacion](img/recomendacion.png)
