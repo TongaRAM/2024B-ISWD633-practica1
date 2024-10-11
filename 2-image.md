@@ -27,7 +27,7 @@ Descargar la imagen **hello-world**
 ```
 docker pull hello-world
 ```
-![descargarImagenHelloWorld](img/descargarImagenHelloWorld.PNG)
+![descargarImagenHelloWorld](img/img/descargarImagenHelloWorld.png)
 
 **¿Qué es nginx**
 
