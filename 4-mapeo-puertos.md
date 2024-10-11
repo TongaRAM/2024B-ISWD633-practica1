@@ -17,10 +17,10 @@ docker run -d --name srv-web4 -p 3000:80 nginx:alpine
 
 ```
 
-![host3000Contenedor80](img/host3000Contenedor80.PNG)
+![host3000Contenedor80](img/host3000Contenedor80.png)
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:3000
-![mapeo](img/accesoLocalHost3000.PNG)
+![mapeo](img/accesoLocalHost3000.png)
 
 ### Para mapear más de un puerto
 
@@ -32,6 +32,6 @@ Crear un contenedor a partir de la imagen rabbitmq version management-alpine, pa
 ```
 docker run -d --name mapeoPort -p 15672:15672 -p 5672:5672 rabbitmq:management-alpine
 ```
-![mapeoVariosPuertos](img/mapeoVariosPuertos.PNG)
+![mapeoVariosPuertos](img/mapeoVariosPuertos.png)
 
-![puerto15672](img/puerto15672.PNG)
+![puerto15672](img/puerto15672.png)
